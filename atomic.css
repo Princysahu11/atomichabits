@@ -1,0 +1,959 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    position: relative;
+    overflow-x: hidden;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #ffff;
+    position: relative;
+
+
+}
+
+#page1>h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: voyage;
+    font-size: 44px;
+    font-weight: 600;
+    color: blue;
+    word-spacing: 8px;
+}
+
+#overlay {
+    height: 100vh;
+    width: 100vw;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 3s;
+    position: absolute;
+    z-index: 99;
+    background-color: #fff;
+
+}
+
+
+
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+    background-color: #0c12be;
+    /* position: absolute;
+    top: 100%; */
+    position: relative;
+}
+
+#navbar>h3 {
+    color: #ffff;
+    font-family: gilroy;
+    font-size: 34px;
+    font-weight: 500;
+    position: absolute;
+    top: 15%;
+    left: 8%;
+
+}
+
+#menu {
+    height: 60px;
+    width: 60px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 88%;
+    top: 15%;
+    cursor: pointer;
+}
+
+#menu i {
+    color: #fff;
+    position: absolute;
+    left: 25%;
+    top: 20%;
+    font-size: 34px;
+    cursor: pointer;
+}
+
+#h1 {
+    color: #ffffff;
+    font-size: 100px;
+    position: absolute;
+    top: 39%;
+    left: 8%;
+    font-family: Vanguard-CF;
+    letter-spacing: 3px;
+}
+
+#h2 {
+    color: #fff;
+    font-size: 88px;
+    position: absolute;
+    top: 60%;
+    left: 8%;
+    font-family: voyage;
+    letter-spacing: 4px;
+}
+
+#h3 {
+    color: #fff;
+    font-size: 90px;
+    position: absolute;
+    top: 80%;
+    left: 8%;
+    font-family: Vanguard-CF;
+    letter-spacing: 4px;
+}
+
+#right {
+    height: 100vh;
+    /* background-color: bisque; */
+    width: 500px;
+    position: absolute;
+    top: 0%;
+    left: 65%;
+    overflow: hidden;
+}
+
+#rightpart1 {
+    margin: 4px;
+    padding: 4px;
+}
+
+#rightpart2 {
+    margin: 4px;
+    padding: 4px;
+}
+
+#page3 {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    /* position: absolute;
+    top: 200%; */
+    position: relative;
+
+}
+
+#page3>h3 {
+    font-family: 'EB Garamond', serif;
+
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    font-size: 54px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 84px;
+    color: #0c12be;
+
+}
+
+#page4 {
+
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    /* position: absolute;
+    top: 300%; */
+    position: relative;
+
+}
+
+#page4Img {
+    height: 450px;
+    width: 990px;
+    background: url("https://uploads-ssl.webflow.com/62857b8fe2b5104ae6a452a7/62a3239ce9fd89996201548c_patina.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border-radius: 10px;
+}
+
+#page4ImgText>h4 {
+    position: absolute;
+    top: 48%;
+    left: 15%;
+    color: #fff;
+    font-family: gilroy;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#page4ImgText>h3 {
+    position: absolute;
+    top: 58%;
+    left: 15%;
+    color: #fff;
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+    font-size: 34px;
+}
+
+#page5 {
+
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    /* position: absolute;
+    top: 400%; */
+    position: relative;
+
+}
+
+#page5Img {
+    height: 450px;
+    width: 990px;
+    background: url("https://uploads-ssl.webflow.com/62857b8fe2b5104ae6a452a7/62a35dd7deab782f8e5826f1_uzurv-preview.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border-radius: 10px;
+}
+
+#page5ImgText>h4 {
+    position: absolute;
+    top: 48%;
+    left: 15%;
+    color: #fff;
+    font-family: gilroy;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#page5ImgText>h3 {
+    position: absolute;
+    top: 58%;
+    left: 15%;
+    color: #fff;
+    font-family: 'EB Garamond', serif;
+    font-weight: 700;
+    font-size: 34px;
+}
+
+#page6 {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    /* position: absolute;
+    top: 500%; */
+    position: relative;
+
+}
+
+#page6Text>h3 {
+    font-family: 'EB Garamond', serif;
+
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    font-size: 54px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 84px;
+    color: #0c12be;
+}
+
+#page6Text>h4 {
+    font-family: Vanguard;
+    font-style: oblique;
+
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 84px;
+    color: #0c12be;
+}
+
+.ri-arrow-right-s-line {
+
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    font-size: 94px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 84px;
+    color: #f040c1;
+    cursor: pointer;
+}
+
+#page7 {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    /* position: absolute;
+    top: 600%; */
+    position: relative;
+
+}
+
+#page7Img {
+    height: 450px;
+    /* width: 850px; */
+    width: 990px;
+    background: url("https://uploads-ssl.webflow.com/62857b8fe2b5104ae6a452a7/62a360317758577f21fbe48c_butterfly-preview.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border-radius: 10px;
+}
+
+
+#page7ImgText>h4 {
+    position: absolute;
+    top: 48%;
+    left: 15%;
+    color: #3a40ec;
+    font-family: gilroy;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#page7ImgText>h3 {
+    position: absolute;
+    top: 58%;
+    left: 15%;
+    color: #3339ea;
+    font-family: gilroy;
+    font-weight: 700;
+    font-size: 34px;
+}
+
+#page8 {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    /* position: absolute;
+    top: 700%; */
+    position: relative;
+
+}
+
+#page8Img {
+    height: 450px;
+    width: 990px;
+    background: url("https://uploads-ssl.webflow.com/62857b8fe2b5104ae6a452a7/62a3612d88abefcef2b1a16c_OneDID-preview.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border-radius: 10px;
+}
+
+#page8ImgText>h4 {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    color: #261e60;
+    font-family: Abcwhyteinktrap, sans-serif;
+    ;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#page8ImgText>h3 {
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    color: #202253;
+    font-family: Abcwhyteinktrap, sans-serif;
+    ;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#page9 {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    /* position: absolute;
+    top: 800%; */
+    position: relative;
+}
+
+#page9>h4 {
+    font-family: voyage;
+    position: absolute;
+    top: 15%;
+    left: 8%;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 70px;
+    color: #0c12be;
+}
+
+#page10 {
+    height: 100vh;
+    width: 100%;
+    background-color: #0c12be;
+    /* position: absolute;
+    top: 900%; */
+    position: relative;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+}
+
+#page10>h4 {
+    font-family: gilroy;
+    position: absolute;
+    top: 24%;
+    left: 10%;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 70px;
+    color: #ffff;
+}
+
+#page10>h1 {
+    font-family: voyage;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 70px;
+    color: #ffff;
+}
+
+#page10>h3 {
+    font-family: gilroy;
+    position: absolute;
+    top: 54%;
+    left: 10%;
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 70px;
+    color: #ffff;
+}
+
+#page10>h3:hover {
+    color: #f040c1;
+    cursor: pointer;
+}
+
+
+#page10>h5 {
+    font-family: gilroy;
+    position: absolute;
+    top: 77%;
+    left: 10%;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #ffff;
+    cursor: pointer;
+}
+
+#logo {
+    font-family: gilroy;
+    position: absolute;
+    top: 10%;
+
+    left: 55%;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #ffff;
+}
+
+
+
+@media (max-width:600px) {
+    #main {
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    #page1 {
+        height: 100vh;
+        width: 100%;
+        background-color: #ffff;
+        position: relative;
+
+
+    }
+
+    #page1>h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: voyage;
+        font-size: 15vw;
+        font-weight: 600;
+        color: blue;
+        word-spacing: 8px;
+    }
+
+    #overlay {
+        height: 100vh;
+        width: 100vw;
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 3s;
+        position: absolute;
+        z-index: 99;
+        background-color: #fff;
+
+    }
+
+
+
+
+    #page2 {
+        height: 100vh;
+        width: 100%;
+        background-color: #0c12be;
+        /* position: absolute;
+        top: 100%; */
+        position: relative;
+    }
+
+    #navbar>h3 {
+        color: #ffff;
+        font-family: gilroy;
+        font-size: 5vw;
+        font-weight: 500;
+        position: absolute;
+        top: 15%;
+        left: 8%;
+
+    }
+
+    #menu {
+        height: 60px;
+        width: 60px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        position: absolute;
+        left: 65%;
+        top: 15%;
+        cursor: pointer;
+    }
+
+    #menu i {
+        color: #fff;
+        position: absolute;
+        left: 25%;
+        top: 20%;
+        font-size: 34px;
+        cursor: pointer;
+    }
+
+    #h1 {
+        color: #ffffff;
+        font-size: 15vw;
+        position: absolute;
+        top: 39%;
+        left: 8%;
+        font-family: Vanguard-CF;
+        letter-spacing: 3px;
+    }
+
+    #h2 {
+        color: #fff;
+        font-size: 15vw;
+        position: absolute;
+        top: 60%;
+        left: 8%;
+        font-family: voyage;
+        letter-spacing: 4px;
+    }
+
+    #h3 {
+        color: #fff;
+        font-size: 12vw;
+        position: absolute;
+        top: 80%;
+        left: 8%;
+        font-family: Vanguard-CF;
+        letter-spacing: 4px;
+    }
+
+    #right {
+        height: 100vh;
+        /* background-color: bisque; */
+        width: 500px;
+        position: absolute;
+        top: 0%;
+        left: 20%;
+        overflow: hidden;
+    }
+
+    #rightpart1 {
+        margin: 4px;
+        padding: 4px;
+    }
+
+    #rightpart2 {
+        margin: 4px;
+        padding: 4px;
+    }
+
+    #page3 {
+        height: 100vh;
+        width: 100%;
+        background-color: #fff;
+        /* position: absolute;
+        top: 200%; */
+        position: relative;
+
+    }
+
+    #page3>h3 {
+        font-family: 'EB Garamond', serif;
+
+        position: absolute;
+        top: 12%;
+        left: 10%;
+        font-size: 10vw;
+        font-weight: 500;
+        letter-spacing: 3px;
+        line-height: 50px;
+        color: #0c12be;
+
+    }
+
+    #page4 {
+
+        height: 100vh;
+        width: 100%;
+        background-color: #fff;
+        /* position: absolute;
+        top: 300%; */
+        position: relative;
+
+    }
+
+    #page4Img {
+        height: 400px;
+        width: 500px;
+        background: url("https://uploads-ssl.webflow.com/62857b8fe2b5104ae6a452a7/62a3239ce9fd89996201548c_patina.jpg");
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 10%;
+        left: 7%;
+        border-radius: 10px;
+    }
+
+    #page4ImgText>h4 {
+        position: absolute;
+        top: 42%;
+        left: 10%;
+        color: #fff;
+        font-family: gilroy;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    #page4ImgText>h3 {
+        position: absolute;
+        top: 48%;
+        left: 10%;
+        color: #fff;
+        font-family: 'EB Garamond', serif;
+        font-weight: 500;
+        font-size: 3vw;
+    }
+
+    #page5 {
+
+        height: 100vh;
+        width: 100%;
+        background-color: #fff;
+        position: relative;
+
+    }
+
+    #page5Img {
+        height: 400px;
+        width: 500px;
+        background: url("https://uploads-ssl.webflow.com/62857b8fe2b5104ae6a452a7/62a35dd7deab782f8e5826f1_uzurv-preview.jpg");
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 10%;
+        left: 7%;
+        border-radius: 10px;
+    }
+
+    #page5ImgText>h4 {
+        position: absolute;
+        top: 44%;
+        left: 10%;
+        color: #fff;
+        font-family: gilroy;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    #page5ImgText>h3 {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        color: #fff;
+        font-family: 'EB Garamond', serif;
+        font-weight: 500;
+        font-size: 3vw;
+    }
+
+    #page6 {
+        height: 100vh;
+        width: 100%;
+        background-color: #fff;
+        /* position: absolute;
+        top: 500%; */
+        position: relative;
+
+    }
+
+    #page6Text>h3 {
+        font-family: 'EB Garamond', serif;
+
+        position: absolute;
+        top: 12%;
+        left: 10%;
+        font-size: 5vw;
+        font-weight: 500;
+        letter-spacing: 2px;
+        line-height: 40px;
+        color: #0c12be;
+    }
+
+    #page6Text>h4 {
+        font-family: Vanguard;
+        font-style: oblique;
+
+        position: absolute;
+        top: 45%;
+        left: 5%;
+        font-size: 10vw;
+        font-weight: 600;
+        letter-spacing: 1px;
+        line-height: 4px;
+        color: #0c12be;
+    }
+
+    .ri-arrow-right-s-line {
+
+        position: absolute;
+        top: 40%;
+        left: 90%;
+        font-size: 8vw;
+        font-weight: 500;
+        letter-spacing: 2px;
+        line-height: 84px;
+        color: #f040c1;
+        cursor: pointer;
+    }
+
+    #page7 {
+        height: 100vh;
+        width: 100%;
+        background-color: #fff;
+        position: relative;
+
+    }
+
+    #page7Img {
+        height: 400px;
+        width: 500px;
+        background: url("https://uploads-ssl.webflow.com/62857b8fe2b5104ae6a452a7/62a360317758577f21fbe48c_butterfly-preview.jpg");
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 10%;
+        left: 7%;
+        border-radius: 10px;
+    }
+
+
+    #page7ImgText>h4 {
+        position: absolute;
+        top: 44%;
+        left: 10%;
+        color: #3a40ec;
+        font-family: gilroy;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    #page7ImgText>h3 {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        color: #3339ea;
+        font-family: gilroy;
+        font-weight: 500;
+        font-size: 3vw;
+    }
+
+    #page8 {
+        height: 100vh;
+        width: 100%;
+        background-color: #fff;
+        /* position: absolute;
+        top: 700%; */
+        position: relative;
+
+    }
+
+    #page8Img {
+        height: 400px;
+        width: 500px;
+        background: url("https://uploads-ssl.webflow.com/62857b8fe2b5104ae6a452a7/62a3612d88abefcef2b1a16c_OneDID-preview.jpg");
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 10%;
+        left: 7%;
+        border-radius: 10px;
+    }
+
+    #page8ImgText>h4 {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        color: #261e60;
+        font-family: Abcwhyteinktrap, sans-serif;
+        ;
+        font-size: 4vw;
+        font-weight: 500;
+    }
+
+    #page8ImgText>h3 {
+        position: absolute;
+        top: 48%;
+        left: 10%;
+        color: #202253;
+        font-family: Abcwhyteinktrap, sans-serif;
+        ;
+        font-weight: 500;
+        font-size: 3vw;
+    }
+
+    #page9 {
+        height: 100vh;
+        width: 100%;
+        background-color: #fff;
+        /* position: absolute;
+        top: 800%; */
+        position: relative;
+    }
+
+    #page9>h4 {
+        font-family: voyage;
+        position: absolute;
+        top: 15%;
+        left: 8%;
+        font-size: 8vw;
+        font-weight: 400;
+        letter-spacing: 2px;
+        line-height: 40px;
+        color: #0c12be;
+    }
+
+    #page10 {
+        height: 100vh;
+        width: 100%;
+        background-color: #0c12be;
+        /* position: absolute;
+        top: 900%; */
+        position: relative;
+        border-top-left-radius: 45px;
+        border-top-right-radius: 45px;
+    }
+
+    #page10>h4 {
+        font-family: gilroy;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        font-size: 5vw;
+        font-weight: 600;
+        line-height: 70px;
+        color: #ffff;
+    }
+
+    #page10>h1 {
+        font-family: voyage;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        font-size: 5vw;
+        font-weight: 600;
+        letter-spacing: 2px;
+        line-height: 70px;
+        color: #ffff;
+    }
+
+    #page10>h3 {
+        font-family: gilroy;
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        font-size: 5vw;
+        font-weight: 400;
+        letter-spacing: 2px;
+        line-height: 70px;
+        color: #ffff;
+    }
+
+    #page10>h3:hover {
+        color: #f040c1;
+        cursor: pointer;
+    }
+
+
+    #page10>h5 {
+        font-family: gilroy;
+        position: absolute;
+        top: 77%;
+        left: 10%;
+        font-size: 5vw;
+        font-weight: 600;
+        letter-spacing: 2px;
+        color: #ffff;
+        cursor: pointer;
+    }
+
+    #logo {
+        font-family: gilroy;
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        color: #ffff;
+    }
+
+
+}
